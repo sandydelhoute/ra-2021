@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+    <script type="text/babel">
+        const rootElement = document.getElementById("root");
+        const onClickEvent = ()=> alert("onClick Event");
+        
+        const element = 
+        <div>Hello Babel
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, cupiditate earum. Dignissimos distinctio repellat, officiis vero explicabo quia harum voluptatibus facere, accusantium rem voluptatem est aspernatur perferendis, asperiores velit error.
+                </p>
+            </div>
+            <div>
+                <button onClick={onClickEvent}>
+                    click me
+                </button>
+            </div>
+        </div>;
+        ReactDOM.render(element, rootElement);
+    </script>
+
+</body>
+
+</html>
