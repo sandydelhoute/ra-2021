@@ -8,13 +8,17 @@ const link= [
       label:'Class vs functions'
     },
     {
-      to:'//i18n',
+      to:'/i18n',
       label:'Location'
     },
     {
-      to:'/httpRequest',
+      to:'/httpRequests',
       label:'Http requests'
-    }
+    },
+    {
+        to:'/UseRef',
+        label:'UseRef'
+      }
   ];
 
  const Links =()=> link.map((link,index)=>

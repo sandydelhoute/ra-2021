@@ -1,9 +1,11 @@
 import { IntlProvider, FormattedMessage } from 'react-intl';
 import Fr from '../translations/fr.json';
-
+import En from '../translations/en.json';
+//const locale = En;
 const locale = navigator.language;
 const translationEnum = {
-    "fr-FR": Fr
+    "fr-FR": Fr,
+    "en-US": En
 }
 
 export const Localisation = () => <IntlProvider

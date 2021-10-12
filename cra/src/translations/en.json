@@ -1,0 +1,4 @@
+{
+    "myMessage": "Today,it's {ts, date, ===yyyyMMdd}",
+    "helloReact": "Hello React {nom}"
+}

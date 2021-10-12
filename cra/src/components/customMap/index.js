@@ -1,5 +1,10 @@
-import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
-import L from 'leaflet';
+import { Map, TileLayer, Marker,Popup  } from 'react-leaflet';
+import L  from 'leaflet';
+import {CustomPopFlagAndPopulate} from './CustomPopFlagAndPopulate'
+
+
+
+
 
 export const CustomMap = props => {
     const ListMarkers = () => props.countries.map(
@@ -8,9 +13,10 @@ export const CustomMap = props => {
                 iconUrl: country.flags.png,
                 iconSize: [50, 33]
             })
+            console.log(country);
             return <Marker position={country.latlng} key={index} icon={flagIcon}>
                 <Popup>
-                    {country.name.common}
+                <CustomPopFlagAndPopulate pop={country.population} flag={country.name.common} />
                 </Popup>
             </Marker>
         }

@@ -1,10 +1,10 @@
 import Axios from 'axios';
 import { useState, useEffect } from 'react';
-import {CustomMap} from '../customMap/index';
+import {CustomMap} from '../components/customMap/index';
 
 const getCountries = () =>
     Axios.get('https://restcountries.com/v3.1/all');
-export const HttpRequest = () => {
+export const HttpRequests = () => {
     const [countries, setCountries] = useState([]);
     useEffect(() =>
         getCountries()     
