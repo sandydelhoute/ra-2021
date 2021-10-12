@@ -6,7 +6,7 @@ function App(props) {
   const [count, setCount] = useState(0);
   function onClickHandler() {
     alert("Handler");
-    setCount(count + 1);
+    setCount(prevCount=> prevCount + 1);
   }
   const textButton = "click me";
   return (

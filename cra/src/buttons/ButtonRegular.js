@@ -1,2 +1,2 @@
 export const ButtonRegular = props=>
-<button onClick={props.onClickHandler}>{props.text}</button>
+<button onClick={props.onClickHandler} className='btn btn-primary'>{props.text}</button>
