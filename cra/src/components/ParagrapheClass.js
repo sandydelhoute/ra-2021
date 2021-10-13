@@ -6,11 +6,10 @@ export class ParagrapheClass extends Component {
         super();
         console.log("constructor");
     }
-
+    //Depreciaeted
     componentWillMount() {
         console.log("componentWillMount");
     }
-
     render() {
         console.log("render");
         return <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse dolorum harum dolor, ea molestias vitae aspernatur rerum, earum optio expedita incidunt! Debitis expedita aliquam quis aperiam eum commodi aut earum. <ButtonRegularOutline>
@@ -18,12 +17,16 @@ export class ParagrapheClass extends Component {
         </ButtonRegularOutline>
         </p>;
     }
-
+  
     componentDidMount() {
         console.log("componentDidMount");
     }
 
     componentDidUpdate() {
         console.log("componentDidUpdate");
+    }
+
+    componentWillUnmount(){
+        console.log("componentWillUnmount");
     }
 };

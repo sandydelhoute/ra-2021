@@ -12,7 +12,9 @@ import {
   ClassVsFunctions,
   Localisation,
   HttpRequests,
-  UseRef
+  UseRef,
+  UseReducer,
+  Observables
 } from './pages/';
 
 const routes = [
@@ -40,6 +42,16 @@ const routes = [
     path: '/UseRef',
     exact: true,
     component: UseRef
+  },
+  {
+    path: '/UseReducer',
+    exact: true,
+    component: UseReducer
+  },
+  {
+    path: '/Observables',
+    exact: true,
+    component: Observables
   },
   {
     path: '/',

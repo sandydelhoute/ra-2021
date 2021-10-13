@@ -9,10 +9,17 @@ const vanillOpt = {
 }
 export const UseRef = ()=>
 {
+  const domRef = useRef(null);
+  //Component did mount
   useEffect(()=>{
-    console.log(domRef.current);
-    VanillaTilt.init(domRef.current,vanillOpt);
+    const titleRef= domRef.current;
+    VanillaTilt.init(titleRef,vanillOpt);
+   
+    return ()=>{
+      console.log("destructor");
+      titleRef.vanillaTilt.destroy();
+    }
   },[])   
-const domRef = useRef(null);
+
 return <div ref={domRef}  className='p-3 bg-info text-light'></div>
 }
